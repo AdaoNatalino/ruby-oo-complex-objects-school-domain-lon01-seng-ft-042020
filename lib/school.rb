@@ -19,7 +19,7 @@ class School
     
     def grade(grade)
         @grade = grade
-        @roster.find {|key, value| key == 10}.slice(1)
+        a = @roster.find {|key, value| key == grade}.slice(1)
     end
 
     def sort
@@ -27,7 +27,6 @@ class School
         @roster.each do |k, v| 
             a = @roster[k] = v.sort
             new_roster[k] = a
-             #binding.pry
         end
         new_roster
     end
