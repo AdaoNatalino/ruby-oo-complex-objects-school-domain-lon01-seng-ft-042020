@@ -19,7 +19,7 @@ class School
     
     def grade(grade)
         @grade = grade
-        a = @roster.find {|key, value| key == grade}.slice(1)
+        @roster.find {|key, value| key == grade}.slice(1)
     end
 
     def sort
